@@ -1,0 +1,33 @@
+GET http://localhost:5000/pelamars
+
+###
+GET http://localhost:5000/pelamars/2
+
+###
+POST http://localhost:5000/pelamars
+Content-Type: application/json
+
+{
+    "nama_lengkap": "Nadia123",
+    "email": "nadia@gmail.com",
+    "apply_role": "Full Stack Developer",
+    "url_linkedin": "https://www.linkedin.com/in/nadia-b37b2/",
+    "link_cv":"https://media.neliti.com/media/publications/227634-teknologi-dan-kehidupan-masyarakat-7686df94.pdf",
+}
+
+###
+PATCH http://localhost:5000/pelamars/2
+Content-Type: application/json
+
+{
+    "nama_lengkap": "Nadia",
+    "email": "nadia@gmail.com",
+    "apply_role": "Full Stack Developer",
+    "url_linkedin": "https://www.linkedin.com/in/nadia-b37b2/",
+    "link_cv":"https://media.neliti.com/media/publications/227634-teknologi-dan-kehidupan-masyarakat-7686df94.pdf",
+}
+
+###
+DELETE http://localhost:5000/pelamars/3
+
+
